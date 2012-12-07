@@ -1,0 +1,5 @@
+@import "varAndMixins";
+
+.header {
+    background: $mainColor url("/images/mbHeader.png") no-repeat;
+}

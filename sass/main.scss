@@ -1,0 +1,289 @@
+@import "varAndMixins";
+// @import "reset";
+
+
+// Top Level Rules
+
+body {
+    font: {
+        size: $fontSize;
+        color: $text;
+
+        family: $fontFam;
+    }
+    line-height: 1.2em;
+    background: $pageBackground;
+    margin-bottom: $footerHeight;
+}
+
+a {
+    color: #052C6E;
+    border: 3px solid transparent;
+    font: {
+        family: $fontFam;
+    }
+    &:hover { 
+        background-color: #34D0BA;
+        color: #A64500;
+        font-weight: 700;
+        @include corners(#34d0ba, 5px, 5px, 5px, 5px);
+    }
+    &:visited {
+        color: #052C6E; // $pageBackground;
+    }
+}
+
+div {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+// IDs and Classes
+
+#Container {
+    width: $pageWidth;
+//    float: left;
+
+    background-color: $sidebar;
+
+    @include marginCenter;
+
+    @include corners($sidebar, 5px, 5px, 5px, 5px);
+    border-right: 0px;
+
+}
+
+.header {
+    background: $sidebar; //  url("../images/mbHeader.png") no-repeat 0 0;
+    color: $mainColor;
+    width: 99%;
+    height: 176px;
+//    padding: 1%;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+
+    -webkit-box-sizing: content-box;
+     -moz-box-sizing: contet-box;
+          box-sizing: content-box;    
+
+    @include corners($sidebar, 5px, 5px, 0px, 0px);
+}
+
+.content {
+    /* margin-left to clear the sidebar */
+//    margin-left: $sidebarWidth;
+    float: left;
+    /* width */
+        width: 65%;
+    background-color: $background; 
+    paddding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 9%;
+    @include corners(darken($background, 30%), 5px, 0px, 0px, 5px);
+    border-radius: 5px 0px 0px 0px; 
+      -moz-border-radius: 5px 0px 0px 0px; 
+      -webkit-border-radius: 5px 0px 0px 0px; 
+    border: 3px solid darken($background, 30%);
+    border-right: 0px;
+ 
+    line-height: 1.5em;
+    margin-bottom: 2em;
+
+    // Inner Container Global Rules
+    .innerContainer {
+        padding: 1% 3% 1% 3%;
+    }
+
+    //Section Classes
+    /* Container for About Pages */
+    .about {
+        @extend .innerContainer;
+
+        padding: 1% 3% 5% 2%;
+
+
+     }
+     /* Containers for Homepage */
+    .resume {
+        @extend .innerContainer;
+        .education, .job {
+            margin-bottom: 1em;
+            h2, h3, h4, {
+            display: inline;
+                font: {
+                    size: 1.1em;
+                    family: $fontSpecial;
+                    weight: 600;
+                }
+            }
+            h4 {
+                font: {
+                    weight: 500;
+                    font-style: italic;
+                }
+            }
+            ul {
+                list-style: none;
+                li {
+                    background-image: url(../images/cog-3.png);
+                    background-repeat: no-repeat;
+                    padding-left: 16px;
+                }
+            }    
+            skills {
+                h3, h4 {
+                    font: {
+                        size: 1.1em;
+                        family: $fontSpecial;
+                        weight: 600;
+                    }
+                }
+                p {
+                    margin-left: 5%;
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+        /* First Paragraph style */
+        .profile {
+            text-align: justify; 
+            width: 66%;
+            @include marginCenter;
+            margin-bottom: 2em;
+        }
+        .highlights {
+            text-align: center;
+            font-weight: 700;
+             @include marginCenter;
+        }
+    } // End Resume - Home 
+
+    /* container class for portfolio */
+    .projects {
+        @extend .innerContainer;
+
+        /* Project Title */ 
+        .headers {
+            font: {
+                size: 1.1em;
+                family: $fontSpecial;
+                font-weight: 600;
+            }
+        }
+
+        h3 {
+            @extend .headers;
+            float: left;
+            text-align: left;
+            margin-left: 5%;
+        }
+        h4 {
+            @extend .headers;
+            float: right;
+            clear: left;
+            text-align: right;
+        }
+        hr {
+            width: 75%;
+            height: 1%;
+
+            color: $sidebar;
+            background-color: $sidebar;
+
+            @include corners(darken($sidebar, 16%), 3px, 3px, 3px, 3px);
+        }
+        img {
+            float: left;
+            clear: right;
+            margin-right: 2%;
+
+            width: 250px;
+            height: 137px;
+        }
+        p {
+            clear: right;
+        }
+
+        .readMore {
+            clear: both;
+            width: 100%;
+            float: right;
+            text-align: right;
+
+            font: {
+                weight: 600;
+                style: italic;
+            }
+        }
+        
+    } //End .projects
+} // End Content   
+
+// Start Sidebar
+.sidebar {
+    float: left;
+    background: $sidebar;
+    width: $sidebarWidth; 
+    padding: 1%;
+
+    /* Nested Tag Rules */
+    ol, ul {
+        -webkit-margin-before: 1%;
+        -webkit-margin-after: 1%;
+        -webkit-padding-start: 20px;
+        list-style: none;
+
+        font: {
+            family: $fontSidebar;
+            size: 20px;
+        }
+        line-height: 1.5em;
+
+    }
+    /* Sidebar Link Appearance */
+    a {
+        color: #000000;
+        border: 3px solid transparent;
+        text-decoration: none; 
+        font: {
+            family: $fontSidebar;
+        }
+        &:hover { 
+            background-color: #00A08A;
+            color: #000000;
+            font-weight: 500;
+            @include corners(#00A08A, 5px, 5px, 5px, 5px);
+        }
+        &:visited {
+            color: #000000;
+        }
+    }
+
+    /* Nav Rules */
+    ul.pageNav {
+        text-align: left;
+    }
+}
+
+
+/* Footer Style Rules */
+#footer {
+    width: 100%;
+    height: $footerHeight;
+    background-color: $sidebar;
+
+    text-align: center;
+    font: {
+        size: $fontSize * .75;
+        family: $fontSpecial;
+        weight: 700;
+    }
+
+    clear: both;
+    padding: 1% 0% 5% 0%;
+
+    p { 
+        margin: 1% auto 5% auto;
+    }
+}

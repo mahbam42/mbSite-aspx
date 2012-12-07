@@ -1,0 +1,50 @@
+// Variables and Mixins for maxbrother.com go here 
+// Colors 
+// Color Pallet: http://colorschemedesigner.com/#0q21Tw0w0w0w0
+
+// Primary Color 
+$mainColor: #ff6a00;
+
+// Text Color
+$text: #1E786C;
+
+// Color for Sidebar and Footer 
+$sidebar: #ffad73;
+
+// Content Background 
+$background: #ff8f40;
+
+// Page Background 
+$pageBackground: darken($background, 30%);
+
+
+// Dimensions 
+
+$pageWidth: 66%; //  815px;
+$sidebarWidth: 35%;
+$footerHeight: 60px;
+
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Fenix|Poiret+One|Anton);
+$fontSize: 16px;
+
+$fontFam: 'Fenix', serif;
+$fontSidebar: Anton, Impact, sans-serif;
+$fontSpecial: 'Poiret One', cursive; // recommended font-weight: 600;
+
+
+// Mixins 
+
+// rounded corners for the content box
+@mixin corners($color, $top, $right, $bottom, $left) {
+    border-radius: $top $right $bottom $left; // 5px 5px 0px 0px
+    -moz-border-radius:  $top $right $bottom $left; // 5px 5px 0px 0px
+    -webkit-border-radius: $top $right $bottom $left; // 5px 5px 0px 0px
+    border: 3px solid $color;
+}
+
+@mixin marginCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
