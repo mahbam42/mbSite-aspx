@@ -36,7 +36,7 @@
 <body>
 	<form id="form1" runat="server">
 		<div class="container_12 border" >
-        	<div id="nav">
+        	<div id="nav grid_12">
                 <div class="grid_3">
                     Home
                 </div>
