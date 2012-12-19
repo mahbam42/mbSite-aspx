@@ -1,0 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Fenix|Poiret+One|Anton);
+body {
+  background: black url("../images/dark_geometric.png");
+  backgground-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left; }

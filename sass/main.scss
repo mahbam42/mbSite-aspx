@@ -1,9 +1,9 @@
-@import "varAndMixins" // Data Sheet 
+@import "varAndMixins"; // Data Sheet 
 
 // Top Level Rules 
 
 body {
-    background: #000000 url(../images/dark_geometric.png);
+    background: #000000 url("../images/dark_geometric.png");
     backgground-repeat: repeat;
     background-attachment: fixed;
     background-position: top left;
