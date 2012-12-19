@@ -1,6 +1,6 @@
 // Variables and Mixins for maxbrother.com go here 
 // Colors 
-// Color Pallet: http://colorschemedesigner.com/#0q21Tw0w0w0w0
+// Color Pallet:
 
 // Primary Color 
 $mainColor: #ff6a00;
@@ -15,23 +15,14 @@ $sidebar: #ffad73;
 $background: #ff8f40;
 
 // Page Background 
-$pageBackground: darken($background, 30%);
 
 
 // Dimensions 
-
-$pageWidth: 66%; //  815px;
-$sidebarWidth: 35%;
-$footerHeight: 60px;
-
+$navHeight: 15%;
 
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Fenix|Poiret+One|Anton);
-$fontSize: 16px;
-
-$fontFam: 'Fenix', serif;
-$fontSidebar: Anton, Impact, sans-serif;
-$fontSpecial: 'Poiret One', cursive; // recommended font-weight: 600;
+$fontSize: 14px;
 
 
 // Mixins 

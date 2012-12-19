@@ -3,8 +3,8 @@
 <html>
 <head runat="server">
 	<title>MAXbrother.com</title>
-    <link rel="stylesheet" href="~/style/960.css" />
-    <link rel="stylesheet" href="~/style/main.css" />
+    <link rel="stylesheet" href="style/960.css" />
+    <link rel="stylesheet" href="style/main.css" />
     
     <style type="text/css">
 		/* Temp Development Styles  */
@@ -23,19 +23,19 @@
 		 .clientLogo {
 			 height: 40px;
 		 }
-		
+		/* in main.scss
 		.content {
 			margin-top: 60px;
 		}
-		
+		 
 		#nav {
 			position: fixed;
 			top: 0px;
 			left: 0px;
 			width: 100%;
-			height: 60px;
+			height: 100px;
 		}
-		
+		*/
 		#social {
 			height: 150px;
 			text-align: left;

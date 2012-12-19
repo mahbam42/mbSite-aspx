@@ -7,4 +7,23 @@ body {
     backgground-repeat: repeat;
     background-attachment: fixed;
     background-position: top left;
+
+    font: {
+        size: $fontSize;
+    }
+}
+
+// Page Elements
+
+#content {
+    margin-top: $navHeight;
+}
+
+#nav {
+    background-color: #2D5291;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: $navHeight;
 }
