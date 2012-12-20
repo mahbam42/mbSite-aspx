@@ -20,10 +20,21 @@ body {
 }
 
 #nav {
-    background-color: #2D5291;
+//    background-color: $navColor;
     position: fixed;
     top: 0px;
-    left: 0px;
+//    left: 0px; // Remove to fix positioning - we want it centered 
     width: 100%;
     height: $navHeight;
+}
+
+// tags 
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    width: 100%;
+    font: {
+        weight: 700;
+    }
+    background-color: $navColor;
+    border: 0px;
 }

@@ -47,16 +47,16 @@
 		<div class="container_12 border"><!-- Grid Container --> 
         	<div id="nav" class="grid_12">
                 <div class="grid_3">
-                    Home
+                    <asp:Button id="btnHome" runat="server" Text="Home"></asp:Button>
                 </div>
                 <div class="grid_3">
-                    Portfolio
+                     <asp:Button id="btnPortfolio" runat="server" Text="Portfolio"></asp:Button>
                 </div>
                 <div class="grid_3">
-                    Resume
+                     <asp:Button id="btnResume" runat="server" Text="Resume"></asp:Button>
                 </div>
                 <div class="grid_3">
-                    About
+                     <asp:Button id="btnAbout" runat="server" Text="About"></asp:Button>
                 </div>
             </div><!-- End Nav Container --> 
             <div class="content"><!-- Start Content -->
