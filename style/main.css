@@ -1,21 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn);
 body {
   background: black url("../images/dark_geometric.png");
   backgground-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Ubuntu", times, sans-serif;
+  color: #18ac32; }
 
 #content {
-  margin-top: 7%; }
+  margin-top: 12%;
+  margin-bottom: 10%; }
 
 #nav {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 7%; }
+  height: 12%;
+  padding: 1%; }
+
+#footer {
+  width: 100%;
+  height: 10%;
+  font-size: 0.8em;
+  clear: both;
+  padding: 1% 0% 5% 0%; }
+
+.background {
+  background-color: #34496d; }
+
+.clientLogo {
+  height: 40px;
+  background-color: #7c98cb;
+  color: #d89f34;
+  font-family: "Vollkron", courier, serif; }
+
+.socialBox {
+  background-color: #34496d;
+  color: #d89f34;
+  font-family: "Ubuntu", times, sans-serif;
+  font-weight: 700; }
 
 input[type="button"], input[type="submit"], input[type="reset"] {
   width: 100%;
-  font-weight: 700;
+  font-family: "Vollkron", courier, serif;
+  font-size: 18px;
+  color: #d89f34;
   background-color: #2d5291;
-  border: 0px; }
+  border: 0px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 3px solid #7c98cb; }

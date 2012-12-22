@@ -19,11 +19,12 @@
 		
 		/* End Temp Styles */ 
 		/* Start Alpha Styles */ 
-		
+		/* in main.scss
 		 .clientLogo {
 			 height: 40px;
+			 background-color: #7c98cb;
 		 }
-		/* in main.scss
+		
 		.content {
 			margin-top: 60px;
 		}
@@ -59,7 +60,7 @@
                      <asp:Button id="btnAbout" runat="server" Text="About"></asp:Button>
                 </div>
             </div><!-- End Nav Container --> 
-            <div class="content"><!-- Start Content -->
+            <div id="content"><!-- Start Content -->
             
                 <div class="grid_8 prefix_2 suffix_2">
                     <div class="border">
@@ -71,10 +72,10 @@
                     <h2>Web Designer and Developer</h2>
                 </div>
                 <div class="grid_12">
-                    <div class="alpha grid_2 suffix_1" id="social">
-                        <div class="border">
+                    <div class="alpha grid_2 suffix_1">
+                        <div class="border socialBox">
                             Social Box
-                            <ul>
+                            <ul style="text-align: left;">
                                 <li>LinkedIn</li>
                                 <li>GitHub</li>
                                 <li>Facebook</li>
@@ -84,7 +85,7 @@
                     </div>
                     <div class="grid_9 omega" style="float: left;">
                         <div class="alpha grid_6">
-                            <div class="border" style="text-align: right; padding:1%;">
+                            <div class="border background" style="text-align: right; padding:1%;">
                                 Recent graduate with a degree in Jewish Studies and Communications<br />
                                 with a love of pushing the limits of my knowledge
                             </div>
@@ -95,7 +96,7 @@
                             </div>
                         </div>
                     
-                        <div class="alpha grid_6">
+                        <div class="alpha grid_6 background">
                             <div>
                                 <h3>Past Projects</h3>
                                 <div class="alpha grid_2">
@@ -127,6 +128,20 @@
                <h4>
                   <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h4>
             </div>
+            <div class="grid_12">
+            	<div id="footer">
+                    <p> Please be friendly and give me<br>
+                        <!-- Like on Facebook -->
+                        <a href="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fmax.brother&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=21">a like on Facebook <img src="/images/facebook.png" alt="Facebook" style="width: 16px; height: 16px;">,</a> 
+                         or  
+                         <!-- Twitter -->
+                         <a href="https://twitter.com/mar_max">send me a tweet <img src="/images/twitter.png" alt="Twitter" style="width: 16px; height: 16px;"></a>
+                         or maybe even connect with me on 
+                         <!-- LinkedIn -->
+                         <a class="linkedin-profileinsider-popup" href="http://www.linkedin.com/in/maxbrother" id="linkedin_badge_gen_0" style="padding-right: 16px; background-image: url(http://static.linkedin.com/img/icon/icon_company_insider_in_12x12.gif); background-position: 100% 100%; background-repeat: no-repeat no-repeat;">LinkedIn</a>! 
+                    </p><p>© 2012 ~ maxbrother.com</p>
+                </div>
+        	</div>
         </div> <!-- End Grid Container -->
         
 	</form>

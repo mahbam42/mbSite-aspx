@@ -10,13 +10,16 @@ body {
 
     font: {
         size: $fontSize;
+        family: $mainFont; 
     }
+    color: $green; 
 }
 
 // Page Elements
 
 #content {
     margin-top: $navHeight;
+    margin-bottom: $footerHeight;
 }
 
 #nav {
@@ -26,6 +29,41 @@ body {
 //    left: 0px; // Remove to fix positioning - we want it centered 
     width: 100%;
     height: $navHeight;
+
+    padding: 1%;
+}
+
+#footer {
+    width: 100%;
+    height: $footerHeight;
+    font: {
+        size: 0.8em;
+    }
+    clear: both; 
+    padding: 1% 0% 5% 0%;
+}
+
+// Classes
+
+.background {
+    background-color: $contentColor;
+}
+.clientLogo {
+    height: 40px;
+    background-color: $highlight; 
+    color: $special;
+    font: {
+        family: $specialFont; 
+    }
+}
+
+.socialBox {
+    background-color: $contentColor;
+    color: $special;
+    font: {
+        family: $mainFont;
+        weight: 700;
+    }
 }
 
 // tags 
@@ -33,8 +71,12 @@ body {
 input[type="button"], input[type="submit"], input[type="reset"] {
     width: 100%;
     font: {
-        weight: 700;
+        family: $specialFont;
+        size: 18px;
     }
+    color: $special;
     background-color: $navColor;
     border: 0px;
+
+    @include corners($highlight, 5px, 5px, 5px, 5px);
 }

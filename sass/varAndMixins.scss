@@ -3,27 +3,27 @@
 // Color Pallet:
 
 // Primary Color 
-$mainColor: #ff6a00;
+// $mainColor: #ff6a00;
 
 // Text Color
 $text: #1E786C;
 
 // Color for Sidebar and Footer 
-$sidebar: #ffad73;
 $navColor: #2d5291;
+$highlight: #7C98CB;
+$contentColor: #34496D;
+$special: #d89f34;
 
-// Content Background 
-$background: #ff8f40;
-
-// Page Background 
-
+$green: #18ac32;
 
 // Dimensions 
-$navHeight: 7%;
+$navHeight: 12%;
+$footerHeight: 10%;
 
 // Fonts
 // Play with the font familys in testFont1.scss and testFont2.scss
 
+@import "./sass/testFont2.scss"; 
 $fontSize: 14px;
 
 
