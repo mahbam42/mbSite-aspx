@@ -11,14 +11,14 @@ $text: #1E786C;
 // Color for Sidebar and Footer 
 $navColor: #2d5291;
 $highlight: #7C98CB;
-$contentColor: #34496D;
+$contentColor: darken(#34496D, 12%);
 $special: #d89f34;
 
-$green: #18ac32;
+$green: lighten(#18ac32, 7%);
 
 // Dimensions 
-$navHeight: 12%;
-$footerHeight: 10%;
+$navHeight: 24px;
+$footerHeight: 20px;
 
 // Fonts
 // Play with the font familys in testFont1.scss and testFont2.scss

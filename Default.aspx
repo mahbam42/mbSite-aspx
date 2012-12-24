@@ -69,7 +69,9 @@
                 </div>
                 
                 <div class="grid_4 prefix_6 suffix_2">
-                    <h2>Web Designer and Developer</h2>
+                    <div class="subHeader">
+                    	<h2>Web Designer and Developer</h2>
+                    </div>
                 </div>
                 <div class="grid_12">
                     <div class="alpha grid_2 suffix_1">
@@ -139,7 +141,7 @@
                          or maybe even connect with me on 
                          <!-- LinkedIn -->
                          <a class="linkedin-profileinsider-popup" href="http://www.linkedin.com/in/maxbrother" id="linkedin_badge_gen_0" style="padding-right: 16px; background-image: url(http://static.linkedin.com/img/icon/icon_company_insider_in_12x12.gif); background-position: 100% 100%; background-repeat: no-repeat no-repeat;">LinkedIn</a>! 
-                    </p><p>© 2012 ~ maxbrother.com</p>
+                    </p><p>&copy; 2012 ~ maxbrother.com</p>
                 </div>
         	</div>
         </div> <!-- End Grid Container -->

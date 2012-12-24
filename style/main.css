@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
 body {
   background: black url("../images/dark_geometric.png");
   backgground-repeat: repeat;
@@ -6,44 +6,51 @@ body {
   background-position: top left;
   font-size: 14px;
   font-family: "Ubuntu", times, sans-serif;
-  color: #18ac32; }
+  color: #1ccb3b; }
 
 #content {
-  margin-top: 12%;
-  margin-bottom: 10%; }
+  margin-top: 24px;
+  margin-bottom: 20px; }
 
 #nav {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 12%;
+  height: 24px;
   padding: 1%; }
 
 #footer {
   width: 100%;
-  height: 10%;
+  height: 20px;
   font-size: 0.8em;
   clear: both;
   padding: 1% 0% 5% 0%; }
 
 .background {
-  background-color: #34496d; }
+  background-color: #202d44; }
 
 .clientLogo {
   height: 40px;
   background-color: #7c98cb;
   color: #d89f34;
-  font-family: "Vollkron", courier, serif; }
+  font-family: "Vollkron", "comic sans", courier, serif; }
 
 .socialBox {
-  background-color: #34496d;
+  background-color: #202d44;
   color: #d89f34;
   font-family: "Ubuntu", times, sans-serif;
   font-weight: 700; }
 
+.subHeader {
+  text-align: right;
+  font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Vollkron", "comic sans", courier, serif; }
+
 input[type="button"], input[type="submit"], input[type="reset"] {
   width: 100%;
-  font-family: "Vollkron", courier, serif;
+  font-family: "Vollkron", "comic sans", courier, serif;
   font-size: 18px;
   color: #d89f34;
   background-color: #2d5291;
@@ -51,4 +58,6 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
-  border: 3px solid #7c98cb; }
+  border: 3px solid #7c98cb;
+  -webkit-appearance: none;
+  /* fix nav buttons in iOS */ }
