@@ -31,6 +31,23 @@ body {
     height: $navHeight;
 
     padding: 1%;
+
+    // Nav Buttons 
+    input[type="button"], input[type="submit"], input[type="reset"] {
+	width: 100%;
+	font: {
+	    family: $specialFont;
+	    size: 18px;
+	}
+	color: $special;
+	background-color: $navColor;
+	border: 0px;
+
+	@include corners($highlight, 5px, 5px, 5px, 5px);
+	-webkit-appearance: none; /* fix nav buttons in iOS */
+
+        @include gradient(lighten($navColor, 12%), darken($navColor, 12%));
+    }
 }
 
 #footer {
@@ -77,16 +94,3 @@ h1, h2, h3, h4, h5,h6 {
     font-family: $specialFont;
 }
 
-input[type="button"], input[type="submit"], input[type="reset"] {
-    width: 100%;
-    font: {
-        family: $specialFont;
-        size: 18px;
-    }
-    color: $special;
-    background-color: $navColor;
-    border: 0px;
-
-    @include corners($highlight, 5px, 5px, 5px, 5px);
-    -webkit-appearance: none; /* fix nav buttons in iOS */
-}
