@@ -56,6 +56,7 @@ body {
     font: {
         size: 0.8em;
     }
+    text-align: center;
     clear: both; 
     padding: 1% 0% 5% 0%;
 }
@@ -85,7 +86,7 @@ body {
 
 .socialBox {
     @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
-    @include corners(mix($contentColor, $special, 25%), 3px, 3px, 3px, 3px);
+    @include corners(darken(mix($contentColor, $special, 30%), 0%), 3px, 3px, 3px, 3px);
     color: $special;
     font: {
         family: $mainFont;

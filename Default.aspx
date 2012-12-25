@@ -29,6 +29,7 @@
                 <div class="grid_8 prefix_2 suffix_2">
                     <div class="header">
                         <h1>Max Brother</h1>
+                        <h4>maxbrother@gmail.com - 310.570.2629</h4>
                     </div>
                 </div>
                 
@@ -50,10 +51,10 @@
                         </div>
                     </div>
                     
-              <div class="grid_5 background">
+              <div class="grid_4 push_1 background">
                     	<p>Tacos are Tasty</p>
                     </div>
-                    <div class="grid_5 prefix_3">
+                    <div class="grid_4 prefix_3">
                     	<div class="background">
                         	<p>Burritos are too!</p>
                     	</div>
