@@ -83,7 +83,11 @@ body {
   height: 40px;
   background-color: #6a8ac4;
   color: #d89f34;
-  font-family: "Vollkron", "comic sans", courier, serif; }
+  font-family: "Vollkron", "comic sans", courier, serif;
+  text-align: center; }
+
+.header {
+  text-align: center; }
 
 .socialBox {
   background: #1c273b;
@@ -102,15 +106,29 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
   /* IE6-9 */
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border: 3px solid #aa8238;
   color: #d89f34;
   font-family: "Ubuntu", times, sans-serif;
   font-weight: 700;
   height: 25%;
   padding-top: 5%;
   padding-bottom: 10%; }
+  .socialBox h3 {
+    text-align: center; }
   .socialBox ul {
-    line-height: 1.5em;
-    text-align: left; }
+    line-height: 2em;
+    text-align: left;
+    list-style-type: none;
+    -webkit-padding-start: 1em;
+    /* fix indentation in Chrome */ }
+    .socialBox ul li {
+      background-image: url(../images/cog-3.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 16px; }
 
 .subHeader {
   text-align: right;

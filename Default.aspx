@@ -27,7 +27,7 @@
             <div id="content" class="container_12"><!-- Start Content -->
             
                 <div class="grid_8 prefix_2 suffix_2">
-                    <div>
+                    <div class="header">
                         <h1>Max Brother</h1>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="grid_12">
                   <div class="grid_2">
                         <div class="socialBox">
-                            Social Box
+                            <h3>Social Box</h3>
                             <ul>
                                 <li>LinkedIn</li>
                                 <li>GitHub</li>
