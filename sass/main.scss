@@ -46,7 +46,7 @@ body {
 	@include corners($highlight, 5px, 5px, 5px, 5px);
 	-webkit-appearance: none; /* fix nav buttons in iOS */
 
-        @include gradient(lighten($navColor, 12%), darken($navColor, 12%));
+        @include gradient(lighten($navColor, 12%), darken($navColor, 12%), 100%);
     }
 }
 
@@ -64,7 +64,7 @@ body {
 
 .background {
 //    background-color: $contentColor; // Commenting out to test gradients 
-    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%));
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 25%);
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
     margin-top: 1%;
     marging-bottom: 2%;
@@ -86,8 +86,8 @@ body {
         weight: 700;
     }
 
-    padding-top: 3%;
-    padding-bottom: 6%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 .subHeader {

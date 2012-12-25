@@ -1,37 +1,30 @@
 // Variables and Mixins for maxbrother.com go here 
 // Colors 
-// Color Pallet: http://colorschemedesigner.com/#0q21Tw0w0w0w0
+// Color Pallet:
 
 // Primary Color 
-$mainColor: #ff6a00;
+// $mainColor: #ff6a00;
 
 // Text Color
 $text: #1E786C;
 
 // Color for Sidebar and Footer 
-$sidebar: #ffad73;
+$navColor: #2d5291;
+$highlight: #7C98CB;
+$contentColor: darken(#34496D, 12%);
+$special: #d89f34;
 
-// Content Background 
-$background: #ff8f40;
-
-// Page Background 
-$pageBackground: darken($background, 30%);
-
+$green: lighten(#18ac32, 7%);
 
 // Dimensions 
-
-$pageWidth: 66%; //  815px;
-$sidebarWidth: 35%;
-$footerHeight: 60px;
-
+$navHeight: 24px;
+$footerHeight: 20px;
 
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Fenix|Poiret+One|Anton);
-$fontSize: 16px;
+// Play with the font familys in testFont1.scss and testFont2.scss
 
-$fontFam: 'Fenix', serif;
-$fontSidebar: Anton, Impact, sans-serif;
-$fontSpecial: 'Poiret One', cursive; // recommended font-weight: 600;
+@import "./sass/testFont2.scss"; 
+$fontSize: 14px;
 
 
 // Mixins 
@@ -42,6 +35,17 @@ $fontSpecial: 'Poiret One', cursive; // recommended font-weight: 600;
     -moz-border-radius:  $top $right $bottom $left; // 5px 5px 0px 0px
     -webkit-border-radius: $top $right $bottom $left; // 5px 5px 0px 0px
     border: 3px solid $color;
+}
+
+@mixin gradient($gStart, $gEnd) {
+    background: mix($gStart, $gEnd); /* Old browsers */
+    background: -moz-linear-gradient(top,  $gStart 0%, $gEnd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gStart), color-stop(100%,$gEnd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $gStart 0%,$gEnd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $gStart 0%,$gEnd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $gStart 0%,$gEnd 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $gStart 0%,$gEnd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 ); /* IE6-9 */
 }
 
 @mixin marginCenter {
