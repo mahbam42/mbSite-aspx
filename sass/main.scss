@@ -63,12 +63,15 @@ body {
 // Classes
 
 .background {
-    background-color: $contentColor;
+//    background-color: $contentColor; // Commenting out to test gradients 
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 10%));
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
 .clientLogo {
     height: 40px;
-    background-color: $highlight; 
+    background-color: darken($highlight, 5%); 
     color: $special;
     font: {
         family: $specialFont; 
