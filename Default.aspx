@@ -45,7 +45,7 @@
 </head>
 <body>
 	<form id="form1" runat="server">
-		<div class="container_12 border"><!-- Grid Container --> 
+		<div class="container_12"><!-- Grid Container --> 
         	<div id="nav" class="grid_12">
                 <div class="grid_3">
                     <asp:Button id="btnHome" runat="server" Text="Home"></asp:Button>
@@ -63,7 +63,7 @@
             <div id="content" class="container_12"><!-- Start Content -->
             
                 <div class="grid_8 prefix_2 suffix_2">
-                    <div class="border">
+                    <div>
                         <h1>Max Brother</h1>
                     </div>
                 </div>
@@ -74,8 +74,8 @@
                     </div>
                 </div>
                 <div class="grid_12">
-                    <div class="grid_2">
-                        <div class="border socialBox">
+                  <div class="grid_2">
+                        <div class="socialBox">
                             Social Box
                             <ul style="text-align: left;">
                                 <li>LinkedIn</li>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     
-                    <div class="grid_5 background">
+              <div class="grid_5 background">
                     	<p>Tacos are Tasty</p>
                     </div>
                     <div class="grid_5 prefix_3">
@@ -97,9 +97,9 @@
                 <div class="grid_12">
               		taco
                 </div>
-                    <div class="grid_9 prefix_3">
+              <div class="grid_9 prefix_3">
                         <div class="alpha grid_6">
-                            <div class="border background" style="text-align: right; padding:1%;">
+                            <div class="background" style="text-align: right; padding:1%;">
                                 Recent graduate with a degree in Jewish Studies and Communications<br />
                                 with a love of pushing the limits of my knowledge
                             </div>
@@ -114,17 +114,17 @@
                             <div>
                                 <h3>Past Projects</h3>
                                 <div class="alpha grid_2">
-                                    <div class="border clientLogo">
+                                    <div class="clientLogo">
                                         AJU
                                     </div>
                                 </div>
                                 <div class="grid_2">
-                                    <div class="border clientLogo">
+                                    <div class="clientLogo">
                                         Ziegler School of Rabbinic Studies
                                     </div>
                                 </div>
                                 <div class="grid_2 omega">
-                                    <div class="border clientLogo">
+                                    <div class="clientLogo">
                                         Soule Homestead 
                                     </div>
                                 </div>    
