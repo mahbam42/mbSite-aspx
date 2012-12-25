@@ -60,7 +60,7 @@
                      <asp:Button id="btnAbout" runat="server" Text="About"></asp:Button>
                 </div>
             </div><!-- End Nav Container --> 
-            <div id="content"><!-- Start Content -->
+            <div id="content" class="container_12"><!-- Start Content -->
             
                 <div class="grid_8 prefix_2 suffix_2">
                     <div class="border">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="grid_12">
-                    <div class="alpha grid_2 suffix_1">
+                    <div class="grid_2">
                         <div class="border socialBox">
                             Social Box
                             <ul style="text-align: left;">
@@ -85,7 +85,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="grid_9 omega" style="float: left;">
+                    
+                    <div class="grid_5 background">
+                    	<p>Tacos are Tasty</p>
+                    </div>
+                    <div class="grid_5 prefix_3">
+                    	<div class="background">
+                        	<p>Burritos are too!</p>
+                    	</div>
+                    </div>
+                <div class="grid_12">
+              		taco
+                </div>
+                    <div class="grid_9 prefix_3">
                         <div class="alpha grid_6">
                             <div class="border background" style="text-align: right; padding:1%;">
                                 Recent graduate with a degree in Jewish Studies and Communications<br />
@@ -130,6 +142,7 @@
                <h4>
                   <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h4>
             </div>
+            
             <div class="grid_12">
             	<div id="footer">
                     <p> Please be friendly and give me<br>

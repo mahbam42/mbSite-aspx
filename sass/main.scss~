@@ -1,10 +1,96 @@
-@import "varAndMixins" // Data Sheet 
+@import "varAndMixins"; // Data Sheet 
 
 // Top Level Rules 
 
 body {
-    background: #000000 url(../images/dark_geometric.png);
+    background: #000000 url("../images/dark_geometric.png");
     backgground-repeat: repeat;
     background-attachment: fixed;
     background-position: top left;
+
+    font: {
+        size: $fontSize;
+        family: $mainFont; 
+    }
+    color: $green; 
 }
+
+// Page Elements
+
+#content {
+    margin-top: $navHeight;
+    margin-bottom: $footerHeight;
+}
+
+#nav {
+//    background-color: $navColor;
+    position: fixed;
+    top: 0px;
+//    left: 0px; // Remove to fix positioning - we want it centered 
+    width: 100%;
+    height: $navHeight;
+
+    padding: 1%;
+
+    // Nav Buttons 
+    input[type="button"], input[type="submit"], input[type="reset"] {
+	width: 100%;
+	font: {
+	    family: $specialFont;
+	    size: 18px;
+	}
+	color: $special;
+	background-color: $navColor;
+	border: 0px;
+
+	@include corners($highlight, 5px, 5px, 5px, 5px);
+	-webkit-appearance: none; /* fix nav buttons in iOS */
+
+        @include gradient(lighten($navColor, 12%), darken($navColor, 12%));
+    }
+}
+
+#footer {
+    width: 100%;
+    height: $footerHeight;
+    font: {
+        size: 0.8em;
+    }
+    clear: both; 
+    padding: 1% 0% 5% 0%;
+}
+
+// Classes
+
+.background {
+    background-color: $contentColor;
+}
+.clientLogo {
+    height: 40px;
+    background-color: $highlight; 
+    color: $special;
+    font: {
+        family: $specialFont; 
+    }
+}
+
+.socialBox {
+    background-color: $contentColor;
+    color: $special;
+    font: {
+        family: $mainFont;
+        weight: 700;
+    }
+}
+
+.subHeader {
+    text-align: right;
+    font-style: italic;
+}
+
+// tags 
+
+h1, h2, h3, h4, h5,h6 {
+    font-family: $specialFont;
+}
+
