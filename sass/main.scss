@@ -64,7 +64,7 @@ body {
 
 .background {
 //    background-color: $contentColor; // Commenting out to test gradients 
-    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 25%);
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
     margin-top: 1%;
     marging-bottom: 2%;
@@ -79,15 +79,21 @@ body {
 }
 
 .socialBox {
-    background-color: $contentColor;
+//    background-color: $contentColor;
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
     color: $special;
     font: {
         family: $mainFont;
         weight: 700;
     }
-
+    height: 25%;
     padding-top: 5%;
     padding-bottom: 10%;
+
+    ul {
+        line-height: 1.5em;
+        text-align: left;
+    }
 }
 
 .subHeader {

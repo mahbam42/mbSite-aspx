@@ -6,42 +6,6 @@
     <link rel="stylesheet" href="style/960.css" />
     <link rel="stylesheet" href="style/main.css" />
     
-    <style type="text/css">
-		/* Temp Development Styles  */
-		
-		div {
-			text-align: center;
-		}
-		
-		.border {
-			border: thin #000000 dashed;
-		}
-		
-		/* End Temp Styles */ 
-		/* Start Alpha Styles */ 
-		/* in main.scss
-		 .clientLogo {
-			 height: 40px;
-			 background-color: #7c98cb;
-		 }
-		
-		.content {
-			margin-top: 60px;
-		}
-		 
-		#nav {
-			position: fixed;
-			top: 0px;
-			left: 0px;
-			width: 100%;
-			height: 100px;
-		}
-		*/
-		#social {
-			height: 150px;
-			text-align: left;
-		}
-	</style>
 </head>
 <body>
 	<form id="form1" runat="server">
@@ -77,7 +41,7 @@
                   <div class="grid_2">
                         <div class="socialBox">
                             Social Box
-                            <ul style="text-align: left;">
+                            <ul>
                                 <li>LinkedIn</li>
                                 <li>GitHub</li>
                                 <li>Facebook</li>
