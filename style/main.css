@@ -89,7 +89,9 @@ body {
   background-color: #202d44;
   color: #d89f34;
   font-family: "Ubuntu", times, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  padding-top: 3%;
+  padding-bottom: 6%; }
 
 .subHeader {
   text-align: right;

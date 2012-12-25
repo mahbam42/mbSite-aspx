@@ -99,9 +99,8 @@
                 </div>
               <div class="grid_9 prefix_3">
                         <div class="alpha grid_6">
-                            <div class="background" style="text-align: right; padding:1%;">
-                                Recent graduate with a degree in Jewish Studies and Communications<br />
-                                with a love of pushing the limits of my knowledge
+                            <div class="background" style="padding:1%;">
+                                <p style="text-align: justify; width: 50%; margin-left: auto; margin-right: auto;">Self taught web designer and devloper and recent graduate with a degree in Jewish Studies and Communications with a love of pushing the limits of my knowledge</p>
                             </div>
                         </div>
                         <div class="grid_3 omega">
