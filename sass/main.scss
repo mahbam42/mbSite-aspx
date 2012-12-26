@@ -85,7 +85,7 @@ body {
 }
 
 .socialBox {
-    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 40%);
     @include corners(darken(mix($contentColor, $special, 30%), 0%), 3px, 3px, 3px, 3px);
     color: $special;
     font: {

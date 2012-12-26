@@ -52,29 +52,24 @@
                     </div>
                     
               <div class="grid_4 push_1 background">
-                    	<p>Tacos are Tasty</p>
+                    	<p>Web Designer, working on web content for almost ten years. Every project is an opportunity to learn!</p>
                     </div>
                     <div class="grid_4 prefix_3">
                     	<div class="background">
-                        	<p>Burritos are too!</p>
+                        	<p>Developer working in vb.Net for one year maintaining and developing projects with thousands of visitors a day. </p>
                     	</div>
                     </div>
                 <div class="grid_12">
               		taco
                 </div>
               <div class="grid_9 prefix_3">
-                        <div class="alpha grid_6">
+                        <div class="grid_6">
                             <div class="background" style="padding:1%;">
                                 <p style="text-align: justify; width: 50%; margin-left: auto; margin-right: auto;">Self taught web designer and devloper and recent graduate with a degree in Jewish Studies and Communications with a love of pushing the limits of my knowledge</p>
                             </div>
                         </div>
-                        <div class="grid_3 omega">
-                            <div class="border" >
-                                Content 3
-                            </div>
-                        </div>
                     
-                        <div class="alpha grid_6 background">
+                        <div class="grid_6 background">
                             <div>
                                 <h3>Past Projects</h3>
                                 <div class="alpha grid_2">
@@ -98,14 +93,6 @@
                 </div>
                 
             </div><!-- End Content Container -->
-           
-            <div class="grid_4 push_8">
-              <h2>Ignore This</h2>
-               <asp:Button ID="Button1" runat="server" Text="Button" />
-               
-               <h4>
-                  <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h4>
-            </div>
             
             <div class="grid_12">
             	<div id="footer">
