@@ -27,26 +27,30 @@ body {
     position: fixed;
     top: 0px;
 //    left: 0px; // Remove to fix positioning - we want it centered 
+    text-align: center;
     width: 100%;
     height: $navHeight;
-
+    
     padding: 1%;
 
     // Nav Buttons 
-    input[type="button"], input[type="submit"], input[type="reset"] {
-	width: 100%;
-	font: {
-	    family: $specialFont;
-	    size: 18px;
+    ul {
+        display: inline;
+        list-style-type: none;
+	li {
+	    font: {
+		family: $specialFont;
+		size: 18px;
+	    }
+	    color: $special;
+	    background-color: $navColor;
+	    border: 0px;
+
+	    @include corners($highlight, 5px, 5px, 5px, 5px);
+	    -webkit-appearance: none; /* fix nav buttons in iOS */
+
+	    @include gradient(lighten($navColor, 12%), darken($navColor, 12%), 100%);
 	}
-	color: $special;
-	background-color: $navColor;
-	border: 0px;
-
-	@include corners($highlight, 5px, 5px, 5px, 5px);
-	-webkit-appearance: none; /* fix nav buttons in iOS */
-
-        @include gradient(lighten($navColor, 12%), darken($navColor, 12%), 100%);
     }
 }
 
@@ -58,6 +62,7 @@ body {
     }
     text-align: center;
     clear: both; 
+    margin-top: 10%;
     padding: 1% 0% 5% 0%;
 }
 
@@ -67,8 +72,9 @@ body {
 //    background-color: $contentColor; // Commenting out to test gradients 
     @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
-    margin-top: 1%;
-    marging-bottom: 2%;
+    margin-top: 2%;
+    marging-bottom: 3%;
+    padding: 2%;
 }
 .clientLogo {
     height: 40px;
@@ -85,7 +91,7 @@ body {
 }
 
 .socialBox {
-    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 40%);
     @include corners(darken(mix($contentColor, $special, 30%), 0%), 3px, 3px, 3px, 3px);
     color: $special;
     font: {

@@ -46,7 +46,7 @@ body {
 	@include corners($highlight, 5px, 5px, 5px, 5px);
 	-webkit-appearance: none; /* fix nav buttons in iOS */
 
-        @include gradient(lighten($navColor, 12%), darken($navColor, 12%));
+        @include gradient(lighten($navColor, 12%), darken($navColor, 12%), 100%);
     }
 }
 
@@ -56,6 +56,7 @@ body {
     font: {
         size: 0.8em;
     }
+    text-align: center;
     clear: both; 
     padding: 1% 0% 5% 0%;
 }
@@ -63,23 +64,54 @@ body {
 // Classes
 
 .background {
-    background-color: $contentColor;
+//    background-color: $contentColor; // Commenting out to test gradients 
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
+    @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
+    margin-top: 1%;
+    marging-bottom: 2%;
 }
 .clientLogo {
     height: 40px;
-    background-color: $highlight; 
+    background-color: darken($highlight, 5%); 
     color: $special;
     font: {
         family: $specialFont; 
     }
+    text-align: center;
+}
+
+.header {
+    text-align: center; 
 }
 
 .socialBox {
-    background-color: $contentColor;
+    @include gradient(darken($contentColor, 10%), lighten($contentColor, 5%), 50%);
+    @include corners(darken(mix($contentColor, $special, 30%), 0%), 3px, 3px, 3px, 3px);
     color: $special;
     font: {
         family: $mainFont;
         weight: 700;
+    }
+    height: 25%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+    h3 {
+        text-align: center;
+    }
+
+    ul {
+        line-height: 2em;
+        text-align: left;
+        list-style-type: none;
+        -webkit-padding-start: 1em; /* fix indentation in Chrome */
+
+        li {
+	    background-image: url(../images/cog-3.png);
+	    background-repeat: no-repeat;
+            background-position: left center;
+	    padding-left: 16px;
+        }
     }
 }
 

@@ -1,4 +1,5 @@
-<%@ Page Language="VB" AutoEventWireup="false" codefile="default.aspx.vb" Inherits="_default"  %>
+<%@ Page Language="VB" AutoEventWireup="false" codefile="default.aspx.vb" Inherits="default"  %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head runat="server">
@@ -10,19 +11,13 @@
 <body>
 	<form id="form1" runat="server">
 		<div class="container_12"><!-- Grid Container --> 
-        	<div id="nav" class="grid_12">
-                <div class="grid_3">
-                    <asp:Button id="btnHome" runat="server" Text="Home"></asp:Button>
-                </div>
-                <div class="grid_3">
-                     <asp:Button id="btnPortfolio" runat="server" Text="Portfolio"></asp:Button>
-                </div>
-                <div class="grid_3">
-                     <asp:Button id="btnResume" runat="server" Text="Resume"></asp:Button>
-                </div>
-                <div class="grid_3">
-                     <asp:Button id="btnAbout" runat="server" Text="About"></asp:Button>
-                </div>
+        	<div id="nav" class="grid_12" style="text-align: center;">
+                <ul>
+                	<li class="grid_2 alpha">Home</li>
+                    <li class="grid_3">Portfolio</li>
+                    <li class="grid_3">Resume</li>
+                    <li class="grid_3 omega">About</li>
+                </ul>
             </div><!-- End Nav Container --> 
             <div id="content" class="container_12"><!-- Start Content -->
             
@@ -52,60 +47,37 @@
                     </div>
                     
               <div class="grid_4 push_1 background">
-                    	<p>Tacos are Tasty</p>
+                    	<p>Web Designer, working on web content for almost ten years. Every project is an opportunity to learn!</p>
                     </div>
                     <div class="grid_4 prefix_3">
                     	<div class="background">
-                        	<p>Burritos are too!</p>
+                        	<p>Developer working in vb.Net for one year maintaining and developing projects with thousands of visitors a day. </p>
                     	</div>
                     </div>
-                <div class="grid_12">
-              		taco
-                </div>
               <div class="grid_9 prefix_3">
-                        <div class="alpha grid_6">
+                        <div class="grid_6">
                             <div class="background" style="padding:1%;">
                                 <p style="text-align: justify; width: 50%; margin-left: auto; margin-right: auto;">Self taught web designer and devloper and recent graduate with a degree in Jewish Studies and Communications with a love of pushing the limits of my knowledge</p>
                             </div>
                         </div>
-                        <div class="grid_3 omega">
-                            <div class="border" >
-                                Content 3
-                            </div>
-                        </div>
+
                     
-                        <div class="alpha grid_6 background">
-                            <div>
-                                <h3>Past Projects</h3>
-                                <div class="alpha grid_2">
-                                    <div class="clientLogo">
-                                        AJU
-                                    </div>
-                                </div>
-                                <div class="grid_2">
-                                    <div class="clientLogo">
-                                        Ziegler School of Rabbinic Studies
-                                    </div>
-                                </div>
-                                <div class="grid_2 omega">
-                                    <div class="clientLogo">
-                                        Soule Homestead 
-                                    </div>
-                                </div>    
+                        <div class=" grid_6 background">
+                            <h3>Past Projects</h3>
+                            <div class="alpha grid_2 clientLogo">
+                                AJU
                             </div>
+                            <div class="grid_2 clientLogo">
+                                    Ziegler School of Rabbinic Studies
+                            </div>
+                            <div class="grid_2 omega clientLogo">
+                                    Soule Homestead 
+                            </div>    
                         </div>
                     </div>
                 </div>
                 
             </div><!-- End Content Container -->
-           
-            <div class="grid_4 push_8">
-              <h2>Ignore This</h2>
-               <asp:Button ID="Button1" runat="server" Text="Button" />
-               
-               <h4>
-                  <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h4>
-            </div>
             
             <div class="grid_12">
             	<div id="footer">
