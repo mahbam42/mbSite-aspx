@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
 body {
-  background: black url("$file");
+  background: black url("../images/dark_geomtric.png");
   backgground-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
