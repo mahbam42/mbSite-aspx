@@ -44,33 +44,31 @@
                                 <li>Twitter</li>
                             </ul>
                         </div>
-                    </div>
+                  </div>
                     
-              <div class="grid_6 background">
-                    	<p>Designer - making your on line experience a prettier place</p>
+              <div class="grid_6 designer">
+                    	<p>Designer ~ making your on line experience a prettier place</p>
                     </div>
-                    <div class="grid_6 prefix_2">
-                    	<div class="background">
-                        	<p>Developer writing instructions for our future robot overloards</p>
-                    	</div>
-                    </div>
-              <div class="grid_9 prefix_3">
+                    <div class="grid_6 push_2 developer">
+                       	<p>Developer ~ writing instructions for our future robot overloards</p>
+                    </div> 
+              <div class="grid_9 prefix_2">
 <!--                        <div class="grid_6">
                             <div class="background" style="padding:1%;">
                                 <p style="text-align: justify; width: 50%; margin-left: auto; margin-right: auto;">Self taught web designer and devloper and recent graduate with a degree in Jewish Studies and Communications with a love of pushing the limits of my knowledge</p>
                             </div>
                         </div>
 -->
-                    
-                        <div class="portPreview grid_6 background">
-                            <h3>Past Projects</h3>
-                            <div class="alpha grid_2 clientLogo">
+
+<div class="portPreview grid_8 background">
+<h3>Past Projects</h3>
+                            <div class="alpha grid_2 push_1 clientLogo">
                                 AJU
                             </div>
-                            <div class="grid_2 clientLogo">
+                            <div class="grid_2 push_1 clientLogo">
                                     Ziegler School of Rabbinic Studies
                             </div>
-                            <div class="grid_2 omega clientLogo">
+                            <div class="grid_2 push_1 omega clientLogo">
                                     Soule Homestead 
                             </div>    
                         </div>
