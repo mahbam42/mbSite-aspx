@@ -6,12 +6,7 @@ body {
   background-position: top left;
   font-size: 14px;
   font-family: "Ubuntu", times, sans-serif;
-  color: #1ccb3b;
-  /* Fixing box model globally */ }
-  body div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+  color: #1ccb3b; }
 
 #content {
   margin-top: 24px;
@@ -99,6 +94,10 @@ body {
   text-align: center; }
 
 .designer {
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
   background: #283955 url("../images/cartographer-Colored.png");
   backgground-repeat: repeat;
   background-attachment: fixed;
@@ -107,6 +106,10 @@ body {
   padding-left: 1%; }
 
 .developer {
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
   background: #283955 url("../images/robots-Colored.png");
   backgground-repeat: repeat;
   background-attachment: fixed;
