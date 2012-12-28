@@ -87,11 +87,20 @@ body {
   padding: 1%; }
 
 .clientLogo {
-  height: 40px;
   background-color: #6a8ac4;
   color: #d89f34;
   font-family: "Vollkron", "comic sans", courier, serif;
   text-align: center; }
+  .clientLogo .clientLogo-Des {
+    background: #283955 url("../images/cartographer-Colored.png");
+    backgground-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top left; }
+  .clientLogo .clientLogo-Dev {
+    background: #283955 url("../images/robots-Colored.png");
+    backgground-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top left; }
 
 .designer {
   /* fix for box model */

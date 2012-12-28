@@ -26,13 +26,13 @@
                     <h4>maxbrother@gmail.com - 310.570.2629</h4>
                 </div>
                 
-                <div class="grid_4 prefix_6 suffix_2">
+                <div class="grid_4 prefix_6 suffix_2 subHeader">
                    	<h2>Web Designer and Developer</h2>
                 </div>
                 <div class="grid_12">
                   <div class="grid_2">
                         <div class="socialBox">
-                            <h3>Social Box</h3>
+                            <h3>Connect with</h3>
                             <ul>
                                 <li>LinkedIn</li>
                                 <li>GitHub</li>
@@ -61,11 +61,11 @@
                             <div class="alpha grid_2 push_1 clientLogo">
                                 AJU
                             </div>
-                            <div class="grid_2 push_1 clientLogo">
-                                    Ziegler School of Rabbinic Studies
+                            <div class="grid_2 push_1 clientLogo-Dev">
+                                <img src="images/zsrsLogo.png" alt="ZSRS Logo" />
                             </div>
-                            <div class="grid_2 push_1 omega clientLogo">
-                                    Soule Homestead 
+                            <div class="grid_2 push_1 omega clientLogo-Des">
+                            	<img src="images/shLogo.png" alt="Soule Homestead Logo" /> 
                             </div>    
                         </div>
                     </div>

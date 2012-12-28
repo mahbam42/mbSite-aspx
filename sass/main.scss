@@ -74,13 +74,20 @@ body {
     padding: 1%;
 }
 .clientLogo {
-    height: 40px;
     background-color: darken($highlight, 5%); 
     color: $special;
     font: {
         family: $specialFont; 
     }
     text-align: center;
+    .clientLogo-Des {
+        @extend clientLogo;
+        @include backgroundTexture("../images/cartographer-Colored.png", lighten($contentColor, 5%));
+    }
+    .clientLogo-Dev {
+        @extend clientLogo;
+        @include backgroundTexture("../images/robots-Colored.png", lighten($contentColor, 5%));
+    }
 }
 
 .designer {
