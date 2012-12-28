@@ -3,7 +3,7 @@
 // Top Level Rules 
 
 body {
-    @include backgroundTexture("../images/dark_geomtric.png", #000000);
+    @include backgroundTexture("../images/dark_geometric.png", #000000);
     font: {
         size: $fontSize;
         family: $mainFont; 
