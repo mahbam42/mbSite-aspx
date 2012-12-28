@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
 body {
-  background: black url("../images/dark_geometric.png");
+  background: black url("$file");
   backgground-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
@@ -132,7 +132,7 @@ body {
     font-size: 0.75em;
     text-align: left;
     list-style-type: none;
-    -webkit-padding-start: 1em;
+    -webkit-padding-start: 0.5em;
     /* fix indentation in Chrome */ }
     .socialBox ul li {
       background-image: url(../images/cog-3.png);

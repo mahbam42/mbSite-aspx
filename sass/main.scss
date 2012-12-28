@@ -3,11 +3,7 @@
 // Top Level Rules 
 
 body {
-    background: #000000 url("../images/dark_geometric.png");
-    backgground-repeat: repeat;
-    background-attachment: fixed;
-    background-position: top left;
-
+    @include backgroundTexture("../images/dark_geomtric.png", #000000);
     font: {
         size: $fontSize;
         family: $mainFont; 
@@ -115,8 +111,7 @@ body {
         font-size: 0.75em;
         text-align: left;
         list-style-type: none;
-        -webkit-padding-start: 1em; /* fix indentation in Chrome */
-
+        -webkit-padding-start: 0.5em; /* fix indentation in Chrome */
         li {
 	    background-image: url(../images/cog-3.png);
 	    background-repeat: no-repeat;

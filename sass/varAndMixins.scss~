@@ -37,14 +37,14 @@ $fontSize: 14px;
     border: 3px solid $color;
 }
 
-@mixin gradient($gStart, $gEnd) {
+@mixin gradient($gStart, $gEnd, $length) {
     background: mix($gStart, $gEnd); /* Old browsers */
-    background: -moz-linear-gradient(top,  $gStart 0%, $gEnd 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gStart), color-stop(100%,$gEnd)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  $gStart 0%,$gEnd 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  $gStart 0%,$gEnd 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  $gStart 0%,$gEnd 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  $gStart 0%,$gEnd 100%); /* W3C */
+    background: -moz-linear-gradient(top,  $gStart 0%, $gEnd $length); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gStart), color-stop($length,$gEnd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $gStart 0%,$gEnd $length); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $gStart 0%,$gEnd $length); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $gStart 0%,$gEnd $length); /* IE10+ */
+    background: linear-gradient(to bottom,  $gStart 0%,$gEnd $length); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 ); /* IE6-9 */
 }
 

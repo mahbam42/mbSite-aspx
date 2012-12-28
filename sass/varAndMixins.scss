@@ -30,6 +30,13 @@ $fontSize: 14px;
 // Mixins 
 
 // rounded corners for the content box
+@mixin backgroundTexture($file, $fallBack) {
+    background:$fallBack url("$file");
+    backgground-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top left;
+}
+
 @mixin corners($color, $top, $right, $bottom, $left) {
     border-radius: $top $right $bottom $left; // 5px 5px 0px 0px
     -moz-border-radius:  $top $right $bottom $left; // 5px 5px 0px 0px
