@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
 body {
   background: black url("../images/dark_geometric.png");
-  backgground-repeat: repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
   font-size: 14px;
@@ -86,21 +86,23 @@ body {
   marging-bottom: 3%;
   padding: 1%; }
 
-.clientLogo {
+.clientLogo, .clientLogo-Des, .clientLogo-Dev {
   background-color: #6a8ac4;
   color: #d89f34;
   font-family: "Vollkron", "comic sans", courier, serif;
   text-align: center; }
-  .clientLogo .clientLogo-Des {
-    background: #283955 url("../images/cartographer-Colored.png");
-    backgground-repeat: repeat;
-    background-attachment: fixed;
-    background-position: top left; }
-  .clientLogo .clientLogo-Dev {
-    background: #283955 url("../images/robots-Colored.png");
-    backgground-repeat: repeat;
-    background-attachment: fixed;
-    background-position: top left; }
+
+.clientLogo-Des {
+  background: #283955 url("../images/cartographer-colored.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left; }
+
+.clientLogo-Dev {
+  background: #283955 url("../images/robots-colored.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left; }
 
 .designer {
   /* fix for box model */
@@ -108,7 +110,7 @@ body {
   -moz-box-sizing: border-box;
   x-sizing: border-box;
   background: #283955 url("../images/cartographer-Colored.png");
-  backgground-repeat: repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
   text-align: left;
@@ -120,7 +122,7 @@ body {
   -moz-box-sizing: border-box;
   x-sizing: border-box;
   background: #283955 url("../images/robots-Colored.png");
-  backgground-repeat: repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
   text-align: right;

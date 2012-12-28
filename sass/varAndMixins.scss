@@ -32,7 +32,7 @@ $fontSize: 14px;
 // rounded corners for the content box
 @mixin backgroundTexture($file, $fallBack) {
     background:$fallBack url($file);
-    backgground-repeat: repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: top left;
 }
