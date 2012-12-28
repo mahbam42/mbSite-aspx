@@ -21,17 +21,13 @@
             </div><!-- End Nav Container --> 
             <div id="content" class="container_12"><!-- Start Content -->
             
-                <div class="grid_8 prefix_2 suffix_2">
-                    <div class="header">
-                        <h1>Max Brother</h1>
-                        <h4>maxbrother@gmail.com - 310.570.2629</h4>
-                    </div>
+                <div class="grid_8 prefix_2 suffix_2 header">
+                    <h1>Max Brother</h1>
+                    <h4>maxbrother@gmail.com - 310.570.2629</h4>
                 </div>
                 
                 <div class="grid_4 prefix_6 suffix_2">
-                    <div class="subHeader">
-                    	<h2>Web Designer and Developer</h2>
-                    </div>
+                   	<h2>Web Designer and Developer</h2>
                 </div>
                 <div class="grid_12">
                   <div class="grid_2">
