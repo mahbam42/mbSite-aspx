@@ -83,7 +83,7 @@ body {
   border: 3px solid #101621;
   margin-top: 2%;
   marging-bottom: 3%;
-  padding: 2%; }
+  padding: 1%; }
 
 .clientLogo {
   height: 40px;
@@ -94,6 +94,9 @@ body {
 
 .header {
   text-align: center; }
+
+.portPreview {
+  padding: 2% 0% 3% 0%; }
 
 .socialBox {
   background: #1c273b;
@@ -126,6 +129,7 @@ body {
     text-align: center; }
   .socialBox ul {
     line-height: 2em;
+    font-size: 0.75em;
     text-align: left;
     list-style-type: none;
     -webkit-padding-start: 1em;

@@ -74,7 +74,7 @@ body {
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
     margin-top: 2%;
     marging-bottom: 3%;
-    padding: 2%;
+    padding: 1%;
 }
 .clientLogo {
     height: 40px;
@@ -88,6 +88,10 @@ body {
 
 .header {
     text-align: center; 
+}
+
+.portPreview {
+    padding: 2% 0% 3% 0%;
 }
 
 .socialBox {
@@ -108,6 +112,7 @@ body {
 
     ul {
         line-height: 2em;
+        font-size: 0.75em;
         text-align: left;
         list-style-type: none;
         -webkit-padding-start: 1em; /* fix indentation in Chrome */

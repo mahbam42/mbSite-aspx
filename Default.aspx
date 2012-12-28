@@ -46,12 +46,12 @@
                         </div>
                     </div>
                     
-              <div class="grid_4 push_1 background">
-                    	<p>Web Designer, working on web content for almost ten years. Every project is an opportunity to learn!</p>
+              <div class="grid_6 background">
+                    	<p>Web Designer - making your on line experience a prettier place</p>
                     </div>
-                    <div class="grid_4 prefix_3">
+                    <div class="grid_6 prefix_2">
                     	<div class="background">
-                        	<p>Developer working in vb.Net for one year maintaining and developing projects with thousands of visitors a day. </p>
+                        	<p>eagerly writing the instructions for our future robot overloards</p>
                     	</div>
                     </div>
               <div class="grid_9 prefix_3">
@@ -62,7 +62,7 @@
                         </div>
 
                     
-                        <div class=" grid_6 background">
+                        <div class="portPreview grid_6 background">
                             <h3>Past Projects</h3>
                             <div class="alpha grid_2 clientLogo">
                                 AJU
