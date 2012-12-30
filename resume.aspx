@@ -61,9 +61,11 @@
             <p>Microsoft Windows XP (Home and Professional), Windows 2000 (Professional and Server Edition), Windows 98, Mac OS 10.4-10.5</p>
         </div>
     </div>
+    <a href="maxBrotherResume.pdf">
     <div class="push_2 grid_2 background download">
         <h5>Download Resume</h5>
     </div>
+    </a>
     <div class="push_2 grid_2 background">
         <h5>Jump To:</h5>
         <ul>
