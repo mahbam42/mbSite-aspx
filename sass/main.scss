@@ -74,12 +74,17 @@ body {
     padding: 1%;
 }
 .clientLogo {
+    @include corners(darken($highlight, 10%), 5px, 5px, 5px, 5ppx);
+    @include divFix;
     background-color: darken($highlight, 5%); 
     color: $special;
     font: {
         family: $specialFont; 
     }
     text-align: center;
+
+    height: 100px;
+    padding: 2%;
 }
 
 
@@ -96,10 +101,14 @@ body {
     @extend .background;
     @include divFix;
     @include backgroundTexture("../images/cartographer-Colored.png", lighten($contentColor, 5%));
-    text-align: left;
+    text-align: right;
 
-    padding-left: 1%;
-} 
+    padding-right: 1%;
+    p {
+        @include marginFix;
+    }
+}
+
 
 .developer {
     @extend .background;
@@ -108,13 +117,36 @@ body {
     text-align: right;
 
     padding-right: 1%;
+    p {
+        @include marginFix;
+    }
 } 
 
 .header {
     text-align: center; 
 }
 
+.headerFlyout1 {
+    @include gradient(darken($green, 10%), darken($green, 35%), 100%);
+    position: relative; 
+    top: -20px; 
+    left: -15%;
+    padding-bottom: 1%;
+    width: 40%;
+
+    h3 {
+        @include marginFix;
+        color: $special;
+        font: {
+            size: 1.5em;
+            weight: 700;
+        }
+        margin-left: 5%;
+    }
+}
+
 .portPreview {
+    @include divFix;
     padding: 2% 0% 3% 0%;
 }
 

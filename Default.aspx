@@ -1,6 +1,6 @@
 <%@ Page Language="VB" AutoEventWireup="false" codefile="default.aspx.vb" Inherits="default"  %>
-<%@ Register TagPrefix="max" TagName="Nav" Src="~/mbSiteNav.ascx" %>
-<%@ Register TagPrefix="max" TagName="Footer" Src="~/mbSiteFooter.ascx" %>
+<%@ Register TagPrefix="max" TagName="Nav" Src="mbSiteNav.ascx" %>
+<%@ Register TagPrefix="max" TagName="Footer" Src="mbSiteFooter.ascx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head runat="server">
@@ -36,13 +36,17 @@
                         </div>
                   </div>
                     
-              <div class="grid_6 designer">
-                    	<p>Designer ~ making your on line experience a prettier place</p>
-                    </div>
-                    <div class="grid_6 push_2 developer">
-                       	<p>Developer ~ writing instructions for our future robot overloards</p>
-                    </div> 
-              <div class="grid_9 prefix_2">
+              <div class="push_1 grid_5 designer">
+                  <div class="headerFlyout1">
+                      <h3>Designer:</h3></div>
+                  <p>making your on line experience a prettier place</p>
+              </div>
+              <div class="push_3 grid_5 developer">
+                  <div class="headerFlyout1">
+                      <h3>Developer:</h3></div>
+                  <p>writing instructions for our future robot overloards</p>
+              </div> 
+              <div class="prefix_2 grid_9">
 <!--                        <div class="grid_6">
                             <div class="background" style="padding:1%;">
                                 <p style="text-align: justify; width: 50%; margin-left: auto; margin-right: auto;">Self taught web designer and devloper and recent graduate with a degree in Jewish Studies and Communications with a love of pushing the limits of my knowledge</p>
@@ -52,13 +56,13 @@
 
 <div class="portPreview grid_8 background">
 <h3>Past Projects</h3>
-                            <div class="alpha grid_2 push_1 clientLogo">
+                            <div class="alpha push_1 grid_2 clientLogo">
                                 AJU
                             </div>
-                            <div class="grid_2 push_1 clientLogo-Dev">
+                            <div class="push_1 grid_2 clientLogo-Dev">
                                 <img src="images/zsrsLogo.png" alt="ZSRS Logo" />
                             </div>
-                            <div class="grid_2 push_1 omega clientLogo-Des">
+                            <div class=" push_1 grid_2 omega clientLogo-Des">
                             	<img src="images/shLogo.png" alt="Soule Homestead Logo" /> 
                             </div>    
                         </div>

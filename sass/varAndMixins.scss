@@ -51,6 +51,14 @@ $fontSize: 14px;
     x-sizing: border-box;
 }
 
+@mixin marginFix {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 @mixin gradient($gStart, $gEnd, $length) {
     background: mix($gStart, $gEnd); /* Old browsers */
     background: -moz-linear-gradient(top,  $gStart 0%, $gEnd $length); /* FF3.6+ */

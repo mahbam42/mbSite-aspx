@@ -87,10 +87,20 @@ body {
   padding: 1%; }
 
 .clientLogo, .clientLogo-Des, .clientLogo-Dev {
+  border-radius: 5px 5px 5px 5ppx;
+  -moz-border-radius: 5px 5px 5px 5ppx;
+  -webkit-border-radius: 5px 5px 5px 5ppx;
+  border: 3px solid #577bbd;
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
   background-color: #6a8ac4;
   color: #d89f34;
   font-family: "Vollkron", "comic sans", courier, serif;
-  text-align: center; }
+  text-align: center;
+  height: 100px;
+  padding: 2%; }
 
 .clientLogo-Des {
   background: #283955 url("../images/cartographer-colored.png");
@@ -113,8 +123,14 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: top left;
-  text-align: left;
-  padding-left: 1%; }
+  text-align: right;
+  padding-right: 1%; }
+  .designer p {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; }
 
 .developer {
   /* fix for box model */
@@ -127,11 +143,54 @@ body {
   background-position: top left;
   text-align: right;
   padding-right: 1%; }
+  .developer p {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; }
 
 .header {
   text-align: center; }
 
+.headerFlyout1 {
+  background: #0e671e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #169f2e), color-stop(100%, #072f0e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #169f2e 0%, #072f0e 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
+  /* IE6-9 */
+  position: relative;
+  top: -20px;
+  left: -15%;
+  padding-bottom: 1%;
+  width: 40%; }
+  .headerFlyout1 h3 {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #d89f34;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 5%; }
+
 .portPreview {
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
   padding: 2% 0% 3% 0%; }
 
 .socialBox {
