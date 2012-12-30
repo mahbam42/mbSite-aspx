@@ -1,0 +1,17 @@
+
+* Job
+
+** ul li
+
+* Education
+
+* skills
+
+* .download
+    "button" for pdf download
+
+* Tags
+
+** ul li
+    Internal Nav
+** links 
