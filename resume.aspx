@@ -2,14 +2,15 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>Resume - MAXbrother.com</title>
+    <link rel="stylesheet" href="style/internal.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="push_2 grid_8 background">
+    <div id="resume" class="push_2 grid_8 background">
         <div class="grid_2 headerFlyout1">
             <h3>Resume:</h3>
         </div>
-        <h2>Experience</h2>
+        <h2 style="clear: left;">Experience</h2>
         <div class="job">
             <h3>Information Systems Specialist</h3> - <h4>Campus Technology Department</h4>
             <p>American Jewish University Los Angeles CA (2007-Present)</p>
@@ -60,7 +61,7 @@
             <p>Microsoft Windows XP (Home and Professional), Windows 2000 (Professional and Server Edition), Windows 98, Mac OS 10.4-10.5</p>
         </div>
     </div>
-    <div class="push_2 grid_2 background">
+    <div class="push_2 grid_2 background download">
         <h5>Download Resume</h5>
     </div>
     <div class="push_2 grid_2 background">
