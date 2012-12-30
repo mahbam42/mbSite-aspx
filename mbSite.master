@@ -1,0 +1,31 @@
+﻿<%@ Master Language="VB" CodeFile="mbSite.master.vb" Inherits="mbSite" %>
+<%@ Register TagPrefix="max" TagName="Nav" Src="mbSiteNav.ascx" %>
+<%@ Register TagPrefix="max" TagName="Footer" Src="mbSiteFooter.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="style/960.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <title>MAXbrother.com</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container_12"><!-- Grid Container -->
+        <max:Nav id="navBar" runat="server" />
+        <div id="content" class="container_12" style="margin-top: 8%;"><!-- Start Content -->
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div><!-- End Content -->
+        <div class="grid_12">
+            	<max:Footer ID="Footer" runat="server" /> 
+        </div>
+    </div><!-- End Grid Container --> 
+    </form>
+</body>
+</html>
