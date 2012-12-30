@@ -1,0 +1,51 @@
+@import "varAndMixins"; // Data Sheet 
+
+// Internal Style Rules 
+
+.download {
+    text-align: center; 
+}
+
+#resume { 
+    .education {
+        margin-left: 5%;
+    }
+
+    .job {
+	ul {
+	    list-style-type: none;
+	    -webkit-padding-start: 0.5em; /* fix indentation in Chrome */
+	    li {
+		background-image: url(../images/cog-3.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 16px;
+	    }
+	}
+    }
+
+    .skills {
+        @extend .education; 
+    }
+
+    // Tags 
+    h1, h3, h4, h5, h6 {
+        @include marginFix;
+        display: inline; 
+    }
+
+    a {
+        font-size: 1em;
+        color: $green;
+        text-decoration: none;
+        border: 3px solid transparent;
+        &:hover {
+            background-color: darken($green, 20%);
+            color: $special;
+            @include corners(darken($green, 25%), 3px, 3px, 3px, 3px);
+        }
+        &:visited {
+            color: darken($green, 20%);
+        }
+    }
+}

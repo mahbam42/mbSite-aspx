@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
+.download {
+  text-align: center; }
+
+#resume .education, #resume .skills {
+  margin-left: 5%; }
+#resume .job ul {
+  list-style-type: none;
+  -webkit-padding-start: 0.5em;
+  /* fix indentation in Chrome */ }
+  #resume .job ul li {
+    background-image: url(../images/cog-3.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 16px; }
+#resume h1, #resume h3, #resume h4, #resume h5, #resume h6 {
+  /* Fix for webkit margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  display: inline; }
+#resume a {
+  font-size: 1em;
+  color: #1ccb3b;
+  text-decoration: none;
+  border: 3px solid transparent; }
+  #resume a:hover {
+    background-color: #107221;
+    color: #d89f34;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 3px solid #0d5b1b; }
+  #resume a:visited {
+    color: #107221; }
