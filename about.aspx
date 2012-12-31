@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/mbSite.master" AutoEventWireup="false" CodeFile="about.aspx.vb" Inherits="about" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="mbSite.master" AutoEventWireup="false" CodeFile="about.aspx.vb" Inherits="about" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title>About - MAXbrother.com</title>
