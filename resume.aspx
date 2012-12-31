@@ -1,14 +1,16 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="mbSite.master" AutoEventWireup="true" CodeFile="resume.aspx.vb" Inherits="_resume" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <title>Resume - MAXbrother.com</title>
+    <title>
+        Resume - MAXbrother.com</title>
     <link rel="stylesheet" href="style/internal.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="resume">
         <div class="push_2 grid_8 background">
             <div class="grid_2 headerFlyout1">
-                <h3>Resume:</h3>
+                <h3>
+                    <asp:Label ID="lblTitle" runat="server" Text="Resume"></asp:Label>:</h3>
             </div>
             <h2 style="clear: left;">Experience</h2>
             <div class="job">
