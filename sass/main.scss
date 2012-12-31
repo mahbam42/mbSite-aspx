@@ -157,9 +157,9 @@ body {
 
     /* Getting a little crazy here */
     & + * {
-        clear: left;
+        clear: both;
     }
-    $:first-child {
+    &:first-child {
         color: $special;
     }
 }

@@ -1,63 +1,271 @@
-/*
-Syntax error: Invalid CSS after "    $": expected identifier, was ":first-child {"
-        on line 162 of sass/main.scss
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
+body {
+  background: black url("../images/dark_geometric.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  font-size: 14px;
+  font-family: "Ubuntu", times, sans-serif;
+  color: #1ccb3b; }
 
-157: 
-158:     /* Getting a little crazy here */
-159:     & + * {
-160:         clear: left;
-161:     }
-162:     $:first-child {
-163:         color: $special;
-164:     }
-165: }
-166: 
-167: .portPreview {
+#content {
+  margin-top: 24px;
+  margin-bottom: 20px; }
 
-Backtrace:
-sass/main.scss:162
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:1134:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:1070:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:1065:in `tok!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:497:in `variable'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:540:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:532:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:521:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:515:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:539:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:532:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:341:in `update_stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:299:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:95:in `initialize_adapter'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `initialize'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `new'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin/compiler.rb:307:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin.rb:107:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:444:in `watch_or_update'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:307:in `process_result'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/bin/sass:8
-/usr/bin/sass:19:in `load'
-/usr/bin/sass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"    $\": expected identifier, was \":first-child {\"\A         on line 162 of sass/main.scss\A \A 157: \A 158:     /* Getting a little crazy here */\A 159:     & + * {\A 160:         clear: left;\A 161:     }\A 162:     $:first-child {\A 163:         color: $special;\A 164:     }\A 165: }\A 166: \A 167: .portPreview {"; }
+#nav {
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  height: 24px;
+  z-index: 1000;
+  padding: 1%; }
+  #nav ul {
+    display: inline;
+    list-style-type: none; }
+    #nav ul li {
+      font-family: "Vollkron", "comic sans", courier, serif;
+      font-size: 18px;
+      color: #d89f34;
+      background-color: #2d5291;
+      border: 0px;
+      border-radius: 5px 5px 5px 5px;
+      -moz-border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border: 3px solid #7c98cb;
+      -webkit-appearance: none;
+      /* fix nav buttons in iOS */
+      background: #2d5291;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #3b6cc0 0%, #1f3862 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b6cc0), color-stop(100%, #1f3862));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #3b6cc0 0%, #1f3862 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #3b6cc0 0%, #1f3862 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #3b6cc0 0%, #1f3862 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #3b6cc0 0%, #1f3862 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
+      /* IE6-9 */ }
+  #nav a {
+    color: #d89f34;
+    text-decoration: none; }
+    #nav a:hover {
+      color: #1ccb3b; }
+    #nav a:visited {
+      color: #8b641b; }
+
+#footer {
+  width: 100%;
+  height: 20px;
+  font-size: 0.8em;
+  text-align: center;
+  clear: both;
+  margin-top: 5%;
+  padding: 1% 0% 5% 0%; }
+
+.background, .designer, .developer {
+  background: #1c273b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #101621 0%, #283955 50%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #101621), color-stop(50%, #283955));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #101621 0%, #283955 50%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #101621 0%, #283955 50%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #101621 0%, #283955 50%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #101621 0%, #283955 50%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 3px solid #101621;
+  margin-top: 2%;
+  marging-bottom: 3%;
+  padding: 1%; }
+
+.clientLogo, .clientLogo-Des, .clientLogo-Dev {
+  border-radius: 5px 5px 5px 5ppx;
+  -moz-border-radius: 5px 5px 5px 5ppx;
+  -webkit-border-radius: 5px 5px 5px 5ppx;
+  border: 3px solid #577bbd;
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
+  background-color: #6a8ac4;
+  color: #d89f34;
+  font-family: "Vollkron", "comic sans", courier, serif;
+  text-align: center;
+  height: 100px;
+  padding: 2%; }
+
+.clientLogo-Des {
+  background: #283955 url("../images/cartographer-colored.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left; }
+
+.clientLogo-Dev {
+  background: #283955 url("../images/robots-colored.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left; }
+
+.designer {
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
+  background: #283955 url("../images/cartographer-Colored.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  text-align: right;
+  padding-right: 1%; }
+  .designer p {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; }
+
+.developer {
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
+  background: #283955 url("../images/robots-Colored.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  text-align: right;
+  padding-right: 1%; }
+  .developer p {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; }
+
+.header {
+  text-align: center; }
+
+.headerFlyout1 {
+  background: #0e671e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #169f2e), color-stop(100%, #072f0e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #169f2e 0%, #072f0e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #169f2e 0%, #072f0e 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
+  /* IE6-9 */
+  position: relative;
+  top: -20px;
+  left: -15%;
+  padding-bottom: 1%;
+  width: 40%;
+  text-align: center;
+  /* Getting a little crazy here */ }
+  .headerFlyout1 h3 {
+    /* Fix for webkit margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #d89f34;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 5%; }
+  .headerFlyout1 + * {
+    clear: both; }
+  .headerFlyout1:first-child {
+    color: #d89f34; }
+
+.portPreview {
+  /* fix for box model */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  x-sizing: border-box;
+  padding: 2% 0% 3% 0%; }
+
+.socialBox {
+  background: #1c273b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #101621 0%, #283955 40%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #101621), color-stop(40%, #283955));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #101621 0%, #283955 40%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #101621 0%, #283955 40%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #101621 0%, #283955 40%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #101621 0%, #283955 40%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border: 3px solid #a07c38;
+  color: #d89f34;
+  font-family: "Ubuntu", times, sans-serif;
+  font-weight: 700;
+  height: 25%;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+  .socialBox h3 {
+    text-align: center; }
+  .socialBox ul {
+    line-height: 2em;
+    font-size: 0.75em;
+    text-align: left;
+    list-style-type: none;
+    -webkit-padding-start: 0.5em;
+    /* fix indentation in Chrome */ }
+    .socialBox ul li {
+      background-image: url(../images/cog-3.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 16px; }
+
+.subHeader {
+  text-align: right;
+  font-style: italic; }
+
+a {
+  font-size: 1em;
+  color: #1ccb3b;
+  text-decoration: none;
+  border: 3px solid transparent; }
+  a:hover {
+    background-color: #107221;
+    color: #d89f34;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 3px solid #0d5b1b; }
+  a:visited {
+    color: #107221; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Vollkron", "comic sans", courier, serif; }

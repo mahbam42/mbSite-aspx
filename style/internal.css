@@ -23,9 +23,24 @@
 
 #portfolio .developer, #portfolio .designer {
   text-align: left; }
-#portfolio h1, #portfolio h3, #portfolio h4, #portfolio h5, #portfolio h6 {
+#portfolio h1, #portfolio h5, #portfolio h6 {
+  /* Fix for webkit margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  float: left;
+  margin: 2%; }
+#portfolio h3 {
   /* Fix for webkit margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px; }
+#portfolio h4 {
+  /* Fix for webkit margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-bottom: 1%; }
