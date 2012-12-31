@@ -3,11 +3,7 @@
 // Top Level Rules 
 
 body {
-    background: #000000 url("../images/dark_geometric.png");
-    backgground-repeat: repeat;
-    background-attachment: fixed;
-    background-position: top left;
-
+    @include backgroundTexture("../images/dark_geometric.png", #000000);
     font: {
         size: $fontSize;
         family: $mainFont; 
@@ -30,6 +26,7 @@ body {
     text-align: center;
     width: 100%;
     height: $navHeight;
+    z-index: 1000; 
     
     padding: 1%;
 
@@ -74,20 +71,83 @@ body {
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
     margin-top: 2%;
     marging-bottom: 3%;
-    padding: 2%;
+    padding: 1%;
 }
 .clientLogo {
-    height: 40px;
+    @include corners(darken($highlight, 10%), 5px, 5px, 5px, 5ppx);
+    @include divFix;
     background-color: darken($highlight, 5%); 
     color: $special;
     font: {
         family: $specialFont; 
     }
     text-align: center;
+
+    height: 100px;
+    padding: 2%;
 }
+
+
+.clientLogo-Des {
+    @extend .clientLogo;
+    @include backgroundTexture("../images/cartographer-colored.png", lighten($contentColor, 5%));
+}
+.clientLogo-Dev {
+    @extend .clientLogo;
+    @include backgroundTexture("../images/robots-colored.png", lighten($contentColor, 5%));
+}
+
+.designer {
+    @extend .background;
+    @include divFix;
+    @include backgroundTexture("../images/cartographer-Colored.png", lighten($contentColor, 5%));
+    text-align: right;
+
+    padding-right: 1%;
+    p {
+        @include marginFix;
+    }
+}
+
+
+.developer {
+    @extend .background;
+    @include divFix;
+    @include backgroundTexture("../images/robots-Colored.png", lighten($contentColor, 5%));
+    text-align: right;
+
+    padding-right: 1%;
+    p {
+        @include marginFix;
+    }
+} 
 
 .header {
     text-align: center; 
+}
+
+.headerFlyout1 {
+    @include gradient(darken($green, 10%), darken($green, 35%), 100%);
+    position: relative; 
+    top: -20px; 
+    left: -15%;
+    padding-bottom: 1%;
+    width: 40%;
+
+    h3 {
+        @include marginFix;
+        color: $special;
+        font: {
+            size: 1.5em;
+            weight: 700;
+        }
+        margin-left: 5%;
+    }
+}
+
+.portPreview {
+    @include divFix;
+    padding: 2% 0% 3% 0%;
 }
 
 .socialBox {
@@ -108,10 +168,10 @@ body {
 
     ul {
         line-height: 2em;
+        font-size: 0.75em;
         text-align: left;
         list-style-type: none;
-        -webkit-padding-start: 1em; /* fix indentation in Chrome */
-
+        -webkit-padding-start: 0.5em; /* fix indentation in Chrome */
         li {
 	    background-image: url(../images/cog-3.png);
 	    background-repeat: no-repeat;

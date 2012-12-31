@@ -49,6 +49,16 @@ body {
 	    @include gradient(lighten($navColor, 12%), darken($navColor, 12%), 100%);
 	}
     }
+    a {
+        color: $special;
+        text-decoration: none;
+        &:hover {
+            color: $green;
+        }
+        &:visited {
+            color: darken($special, 20%);
+        }
+    }
 }
 
 #footer {
@@ -59,7 +69,7 @@ body {
     }
     text-align: center;
     clear: both; 
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 1% 0% 5% 0%;
 }
 
@@ -133,6 +143,7 @@ body {
     left: -15%;
     padding-bottom: 1%;
     width: 40%;
+    text-align: center;
 
     h3 {
         @include marginFix;
