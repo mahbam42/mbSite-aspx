@@ -197,7 +197,22 @@ body {
     font-style: italic;
 }
 
-// tags 
+// tag
+
+a {
+    font-size: 1em;
+    color: $green;
+    text-decoration: none;
+    border: 3px solid transparent;
+    &:hover {
+        background-color: darken($green, 20%);
+        color: $special;
+        @include corners(darken($green, 25%), 3px, 3px, 3px, 3px);
+    }
+    &:visited {
+        color: darken($green, 20%);
+    }
+} 
 
 h1, h2, h3, h4, h5,h6 {
     font-family: $specialFont;

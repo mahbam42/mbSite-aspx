@@ -247,5 +247,20 @@ body {
   text-align: right;
   font-style: italic; }
 
+a {
+  font-size: 1em;
+  color: #1ccb3b;
+  text-decoration: none;
+  border: 3px solid transparent; }
+  a:hover {
+    background-color: #107221;
+    color: #d89f34;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 3px solid #0d5b1b; }
+  a:visited {
+    color: #107221; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Vollkron", "comic sans", courier, serif; }
