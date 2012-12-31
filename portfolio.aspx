@@ -18,7 +18,8 @@
             	<h4>WCCE</h4>
             </div>
             <h4>the Whizin Center for Continuing Education</h4>
-            <h5>Homepage Design</h5> <h5>PSD Design</h5>
+            <h5>Homepage Design<br />
+            PSD Design</h5>
             <p>Authored the style and created the layout and content for the subsite, keeping with the conventions and layout of the greater site.</p>
         </div><!--end project 1 -->
         
