@@ -12,7 +12,7 @@
                 <h3>
                     <asp:Label ID="lblTitle" runat="server" Text="Resume"></asp:Label>:</h3>
             </div>
-            <h2 style="clear: left;">Experience</h2>
+            <h2 id="Experience" style="clear: left;">Experience</h2>
             <div class="job">
                 <h3>Information Systems Specialist</h3> - <h4>Campus Technology Department</h4>
                 <p>American Jewish University Los Angeles CA (2007-Present)</p>
@@ -44,14 +44,14 @@
                     <li>Interact with University's IT Facilities for hardware repair and diagnostics</li>
                 </ul>
             </div>
-            <h2>Education</h2>
+            <h2 id="Education">Education</h2>
             <div class="education">
                 <h3><a href="http://ajula.edu">American Jewish University</a></h3><h4> Bachelor's of Arts in Jewish Studies and Communications - May, 2012</h4>
             </div>
             <div class="education">
                 <h3><a href="http://www.gannacademy.org/">Gann Academy</a></h3> - <h4>The New Jewish High School of Greater Boston - May, 2007</h4>
             </div>
-            <h2>Expertise</h2>
+            <h2 id="Expertise">Expertise</h2>
             <div class="skills">
                 <h3>Technical Languages:</h3>
                 <p> XHTML 1.0, CSS 3, HTML 4.1, SASS, Some VB.NET/Microsoft ASP.Net</p>
@@ -71,13 +71,10 @@
         <div class="push_2 grid_2 background">
             <h5>Jump To:</h5>
             <ul>
-                <li>Experience</li>
-                <li>Education</li>
-                <li>Expertise</li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Expertise">Expertise</a></li>
             </ul>
-        </div>
-        <div class="push_2 grid_2 background">
-            <h5>Box 3</h5>
         </div>
     </div>
 </asp:Content>
