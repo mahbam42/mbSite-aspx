@@ -43,6 +43,7 @@
         	<div class="headerFlyout1">
             	<h4>casianoChronicle.ajula.edu</h4>
             </div>
+            <h4>The Casiano Chronicle</h4>
             <h5>Staff Writer</h5>
             <p>College newspaper, I wrote for a semester mostly on technology, with a few news pieces regarding the University.</p>
         </div><!-- end project 4 -->
