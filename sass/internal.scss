@@ -4,7 +4,7 @@
 
 .download {
     text-align: center; 
-    @include gradient(darken($highlight, 10%), lighten($highlight, 5%), 50%);
+    @include gradient(darken($highlight, 25%), darken($highlight, 5%), 50%);
     @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
     margin-top: 2%;
     marging-bottom: 3%;
