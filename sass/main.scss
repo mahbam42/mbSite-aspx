@@ -52,11 +52,13 @@ body {
     a {
         color: $special;
         text-decoration: none;
+        display: inline-block;
+        width: 97%;
+        &:visited {
+            color: darken($special, 10%);
+        }
         &:hover {
             color: $green;
-        }
-        &:visited {
-            color: darken($special, 20%);
         }
     }
 }

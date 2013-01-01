@@ -53,11 +53,13 @@ body {
       /* IE6-9 */ }
   #nav a {
     color: #d89f34;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    width: 97%; }
+    #nav a:visited {
+      color: #b68323; }
     #nav a:hover {
       color: #1ccb3b; }
-    #nav a:visited {
-      color: #8b641b; }
 
 #footer {
   width: 100%;

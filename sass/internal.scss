@@ -41,16 +41,35 @@
     }
 
     // Tags 
-    h1, h5, h6 {
-        @include marginFix;
-        float: left;
-        margin: 2%;
+    a {
+        &:hover {
+            background-color: transparent;
+            color: $special; 
+        }
     }
+
     h3 {
         @include marginFix;
     }
     h4 {
         @include marginFix;
         margin-bottom: 1%;
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+    h5 {
+        @include marginFix;
+        margin-bottom: 2%;
+        padding: 2%;
+        font-size: 1.1em;
+        line-height: 1.3em;
+
+        float: left;
+    }
+    img {
+        float: right;
+        @include corners(#000022, 3px, 3px, 3px, 3px);
+        -webkit-box-shadow: inset 3px 3px 6px 3px #000022;
+        box-shadow: inset 3px 3px 6px 3px #000022;
     }
 }
