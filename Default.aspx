@@ -57,7 +57,7 @@
 <div class="portPreview grid_8 background">
 <h3>Past Projects</h3>
                             <div class="alpha push_1 grid_2 clientLogo">
-                                AJU
+                                <img src="images/aju-round-logo.png" alt="AJU Logo" />
                             </div>
                             <div class="push_1 grid_2 clientLogo-Dev">
                                 <img src="images/zsrsLogo.png" alt="ZSRS Logo" />
