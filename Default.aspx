@@ -26,12 +26,12 @@
                 <div class="grid_12">
                   <div class="grid_2">
                         <div class="socialBox">
-                            <h3>Connect with</h3>
+                            <h4>Connect On...</h4>
                             <ul>
-                                <li>LinkedIn</li>
-                                <li>GitHub</li>
-                                <li>Facebook</li>
-                                <li>Twitter</li>
+                                <li><a href="http://www.linkedin.com/in/maxbrother/">LinkedIn</a></li>
+                                <li><a href="https://github.com/mahbam42">GitHub</a></li>
+                                <li><a href="http://www.facebook.com/max.brother">Facebook</a></li>
+                                <li><a href="https://twitter.com/mar_max">Twitter</a></li>
                             </ul>
                         </div>
                   </div>
