@@ -4,6 +4,19 @@
 
 .download {
     text-align: center; 
+    @include gradient(darken($highlight, 10%), lighten($highlight, 5%), 50%);
+    @include corners(darken($contentColor, 10%), 5px, 5px, 5px, 5px);
+    margin-top: 2%;
+    marging-bottom: 3%;
+    padding: 1%;
+    a {
+        display: inline-block; 
+        width: 100%;
+        color: $special;
+        &:hover {
+            color: $special; 
+        }
+    }
 }
 
 #resume { 
@@ -12,6 +25,7 @@
     }
 
     .job {
+        margin-left: 5%;
 	ul {
 	    list-style-type: none;
 	    -webkit-padding-start: 0.5em; /* fix indentation in Chrome */
@@ -42,6 +56,7 @@
 
     // Tags 
     a {
+        border: 0;
         &:hover {
             background-color: transparent;
             color: $special; 

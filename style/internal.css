@@ -1,18 +1,49 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Vollkorn:400italic,400,700);
 .download {
-  text-align: center; }
+  text-align: center;
+  background: #7290c7;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #577bbd 0%, #8ea6d2 50%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #577bbd), color-stop(50%, #8ea6d2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #577bbd 0%, #8ea6d2 50%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #577bbd 0%, #8ea6d2 50%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #577bbd 0%, #8ea6d2 50%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #577bbd 0%, #8ea6d2 50%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gStart', endColorstr='$gEnd',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 3px solid #101621;
+  margin-top: 2%;
+  marging-bottom: 3%;
+  padding: 1%; }
+  .download a {
+    display: inline-block;
+    width: 100%;
+    color: #d89f34; }
+    .download a:hover {
+      color: #d89f34; }
 
 #resume .education, #resume .skills {
   margin-left: 5%; }
-#resume .job ul {
-  list-style-type: none;
-  -webkit-padding-start: 0.5em;
-  /* fix indentation in Chrome */ }
-  #resume .job ul li {
-    background-image: url(../images/cog-3.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 16px; }
+#resume .job {
+  margin-left: 5%; }
+  #resume .job ul {
+    list-style-type: none;
+    -webkit-padding-start: 0.5em;
+    /* fix indentation in Chrome */ }
+    #resume .job ul li {
+      background-image: url(../images/cog-3.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 16px; }
 #resume h1, #resume h3, #resume h4, #resume h5, #resume h6 {
   /* Fix for webkit margins */
   -webkit-margin-before: 0em;
@@ -23,9 +54,11 @@
 
 #portfolio .developer, #portfolio .designer {
   text-align: left; }
-#portfolio a:hover {
-  background-color: transparent;
-  color: #d89f34; }
+#portfolio a {
+  border: 0; }
+  #portfolio a:hover {
+    background-color: transparent;
+    color: #d89f34; }
 #portfolio h3 {
   /* Fix for webkit margins */
   -webkit-margin-before: 0em;
