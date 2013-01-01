@@ -4,11 +4,6 @@
     <title>Portfolio - MAXbrother.com</title>
     <link rel="stylesheet" href="style/internal.css" />
 
-    <style type="text/css">
-        img {
-            float: right;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div id="portfolio">
